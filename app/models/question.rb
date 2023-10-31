@@ -5,5 +5,4 @@ class Question < ApplicationRecord
   validates :body, presence: true
   validates :answers, length: { in: 1...5 }
 
-  scope :correct_answers, -> { joins(:answers).where(answers: { correct: true }) }
 end

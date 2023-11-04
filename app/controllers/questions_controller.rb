@@ -1,4 +1,6 @@
 class QuestionsController < ApplicationController
+  before_action :find_test, only: %i[index create new]
+
   def index
     @questions = @test.questions
   end
@@ -30,4 +32,8 @@ private
 
 def question_params
   params.require(:question).permit(:body)
+end
+
+def find_test
+  @test = Test.find(params[:test_id])
 end

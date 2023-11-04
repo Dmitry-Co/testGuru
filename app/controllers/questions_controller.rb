@@ -22,6 +22,10 @@ class QuestionsController < ApplicationController
   end
 end
 
+def destroy
+  @question.destroy
+end
+
 private
 
 def question_params

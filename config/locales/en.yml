@@ -30,4 +30,16 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  tests:
+    new:
+      create_new_test: "Create New Test"
+      errors_detected: "error detected"
+    create:
+      success: "Test was successfully created."
+      failure: "Test could not be created."
+  activerecord:
+    attributes:
+      test:
+        title: "Title"
+        level: "Level"
+        category: "Category"

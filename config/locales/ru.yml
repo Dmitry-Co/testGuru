@@ -1,8 +1,0 @@
-ru:
-  activerecord:
-    errors:
-      models:
-        test:
-          attributes:
-            author:
-              required: "Автор не может быть пустым"

@@ -7,21 +7,26 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 # Удаление данных
-# Answer.destroy_all
-# Question.destroy_all
-# Test.destroy_all
-# Category.destroy_all
-# User.destroy_all
+Answer.destroy_all
+Question.destroy_all
+Test.destroy_all
+Category.destroy_all
+User.destroy_all
 
 # Создание категорий
 history = Category.create(title:   'История')
 science = Category.create(title:   'Наука')
 geography = Category.create(title: 'География')
 
-# Создание тестов и связи с категориями
-hist_test = history.tests.create(title:  'История', level: 1)
-sci_test = science.tests.create(title:   'Наука', level: 2)
-geo_test = geography.tests.create(title: 'География', level: 3)
+# Создание пользователей
+user1 = User.create(name: 'User1', email: 'user1@example.com')
+user2 = User.create(name: 'User2', email: 'user2@example.com')
+user3 = User.create(name: 'User3', email: 'user3@example.com')
+
+# Создание тестов и связи с категориями и пользователями
+hist_test = history.tests.create(title: 'История', level: 1, author: user1)
+sci_test = science.tests.create(title: 'Наука', level: 2, author: user2)
+geo_test = geography.tests.create(title: 'География', level: 3, author: user3)
 
 # Создание вопросов и связи с тестами
 hist_q1 = hist_test.questions.create(body: 'Какие древние цивилизации существовали в Месопотамии?')
@@ -48,8 +53,3 @@ sci_q3.answers.create(body: 'Силовое поле, создаваемое в�
 geo_q1.answers.create(body: 'Гренландия', correct: true)
 geo_q2.answers.create(body: 'Озеро Байкал', correct: true)
 geo_q3.answers.create(body: 'Антарктида', correct: true)
-
-# Создание пользователей и связи с тестами
-user1 = hist_test.users.create(name: 'User1')
-user2 = sci_test.users.create(name:  'User2')
-user3 = geo_test.users.create(name:  'User3')

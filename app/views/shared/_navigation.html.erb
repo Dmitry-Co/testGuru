@@ -1,0 +1,9 @@
+<nav>
+  <%= link_to 'All Tests', tests_path %>
+
+  <% if @test.nil? %>
+    <%= link_to 'Create New Test', new_test_path %>
+  <% else %>
+    <%= link_to 'Update Test', edit_test_path(@test) if @test.persisted? && params[:action] != 'edit' %>
+  <% end %>
+</nav>

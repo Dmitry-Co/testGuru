@@ -1,4 +1,7 @@
 class TestsController < ApplicationController
+  before_action :find_test, only: %i[show edit destroy]
+
+  rescue_from ActiveRecord::RecordNotFound, with: :rescue_with_test_not_found
 
   def index
     @tests = Test.all
@@ -47,5 +50,13 @@ class TestsController < ApplicationController
 
   def test_params
     params.require(:test).permit(:title, :level, :category_id, :author_id)
+  end
+
+  def find_test
+    @test = Test.find(params[:id])
+  end
+  
+  def rescue_with_test_not_found
+    render plain: 'Test does not exist'
   end
 end

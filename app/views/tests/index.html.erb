@@ -4,6 +4,7 @@
   <%= link_to 'New test', new_test_path %>
 </p>
 
+<% if @tests.present? %>
 <table>
   <tr>
     <th>Title</th>
@@ -12,3 +13,6 @@
   </tr>
   <%= render @tests %>
 </table> 
+<% else %>
+<p>You haven't tests in progress</p>
+ <% end %>

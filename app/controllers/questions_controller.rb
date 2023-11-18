@@ -8,12 +8,10 @@ class QuestionsController < ApplicationController
     @questions = @test.questions
   end
 
-  def show
-    @question = Question.find(params[:id])
-  end
+  def show; end
 
   def new
-    @question = Question.new
+    @question = @test.questions.new
   end
 
   def create
@@ -26,9 +24,7 @@ class QuestionsController < ApplicationController
     end
   end
 
-  def edit
-    @question = Question.find(params[:id])
-  end
+  def edit; end
 
   def update
     if @question.update(question_params)
@@ -37,6 +33,7 @@ class QuestionsController < ApplicationController
       render :edit
     end
   end
+
     def destroy
       @question.destroy
       redirect_to test_path(@question.test_id)

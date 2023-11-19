@@ -1,6 +1,6 @@
 class Test < ApplicationRecord
   belongs_to :category
-  has_many :questions
+  has_many :questions, dependent: :destroy
   belongs_to :author, class_name: 'User'
   has_many :tests_users
   has_many :users, through: :tests_users
@@ -20,5 +20,9 @@ class Test < ApplicationRecord
 
   def self.sorted_names_by_category(category_name)
     names_by_category(category_name).order(title: :desc).pluck(:title)
+  end
+
+  def questions_count
+    questions.size
   end
 end

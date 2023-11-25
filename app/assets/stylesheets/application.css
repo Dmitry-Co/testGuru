@@ -14,4 +14,12 @@
  *= require_self
  *= styles.css
  *= scaffold.css
+ *= test_passages.css
  */
+ .good {
+  color: green;
+}
+
+.bad {
+  color: red;
+}

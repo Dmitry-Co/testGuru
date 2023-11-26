@@ -7,11 +7,11 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 # Удаление данных
-Answer.destroy_all
-Question.destroy_all
-Test.destroy_all
-User.destroy_all
-Category.destroy_all
+# Answer.destroy_all
+# Question.destroy_all
+# Test.destroy_all
+# User.destroy_all
+# Category.destroy_all
 
 # Создание категорий
 history = Category.create!(title:   'История')

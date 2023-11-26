@@ -7,6 +7,10 @@
   width: 100%;
 }
 
-/* html {
-  background-color: rgb(127, 255, 136);
-} */
+.good {
+  color: green;
+}
+
+.bad {
+  color: red;
+}

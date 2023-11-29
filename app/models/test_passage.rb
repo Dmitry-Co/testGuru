@@ -16,7 +16,7 @@ class TestPassage < ApplicationRecord
       self.correct_questions += 1
     end
     
-    self.current_question_id = next_question&.id
+    
     save!
   end
 
@@ -31,6 +31,7 @@ class TestPassage < ApplicationRecord
 private
 
 def before_validation_set_question
+  # binding.pry
   if (test.present?) && (self.current_question == nil)
     self.current_question = test.questions.first
   else

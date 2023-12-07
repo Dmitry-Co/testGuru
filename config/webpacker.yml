@@ -50,6 +50,32 @@ default: &default
 development:
   <<: *default
   compile: true
+  dev_server:
+    https: false
+    host: localhost
+    port: 3035
+    public: localhost:3035
+    hmr: false
+    # Inline should be set to true if using HMR
+    inline: true
+    overlay: true
+    compress: true
+    disable_host_check: true
+    use_local_ip: false
+    quiet: false
+    pretty: false
+    headers:
+      'Access-Control-Allow-Origin': '*'
+    watch_options:
+      ignored: '**/node_modules/**'
+      aggregate_timeout: 300
+      poll: 500
+  node:
+    fs: 'empty'
+    child_process: 'empty'
+    dgram: 'empty'
+    net: 'empty'
+    tls: 'empty'
 
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:

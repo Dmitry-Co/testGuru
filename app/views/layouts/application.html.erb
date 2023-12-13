@@ -16,8 +16,9 @@
       <p class="nav user">Welcome, <b><%= current_user.email %></b> Guru</p>
     <% end %>
 
-    <%= yield %>
-    
+    <%= yield %> <br><br>
+  
+    <%= render "shared/navbar" %>
     <%= render 'shared/footer' %>
   </body>
 </html>

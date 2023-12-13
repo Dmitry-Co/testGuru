@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   helper FooterHelper
 
+  before_action :authenticate_user!
   helper_method :current_user, :logged_in?
 
   private

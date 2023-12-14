@@ -1,0 +1,9 @@
+<navbar>
+  <span><%= link_to 'Test Guru project', root_path %></span> |
+  <span><%= link_to 'Log in', login_path %></span> |
+  <span><%= link_to 'Sign up', signup_path %></span> |
+  <span><%= link_to 'End session',
+                   login_path,
+                   method: :delete,
+                   data: { confirm: 'Are you sure?' } %></span>
+ </navbar>

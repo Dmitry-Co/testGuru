@@ -34,7 +34,8 @@ module.exports = function(api) {
           modules: false,
           exclude: ['transform-typeof-symbol']
         }
-      ]
+      ],
+      ['@babel/preset-typescript', { 'allExtensions': true, 'isTSX': true }]
     ].filter(Boolean),
     plugins: [
       'babel-plugin-macros',
@@ -77,6 +78,13 @@ module.exports = function(api) {
           async: false
         }
       ]
+      [
+        '@babel/plugin-proposal-optional-chaining',
+        {
+          loose: true,
+        }
+      ]
+      
     ].filter(Boolean)
   }
 }

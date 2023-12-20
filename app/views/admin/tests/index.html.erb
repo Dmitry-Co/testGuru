@@ -1,0 +1,20 @@
+<h1>Tricky Tests</h1>
+
+<p>
+  <%= link_to 'New test', new_admin_test_path %>
+</p>
+
+<% if @tests.present? %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Level</th>
+    <th>Questions Count</th>
+    <th colspan="4">Actions</th>
+  </tr>
+  <%= render @tests %>
+</table> 
+<% else %>
+<p>You haven't tests in progress</p>
+ <% end %>
+ 

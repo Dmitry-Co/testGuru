@@ -4,4 +4,5 @@ import "controllers"
 
 // app/javascript/packs/application.js
 import 'bootstrap';
-import '../stylesheets/application.scss';
+import '../stylesheets/application.css';
+ 

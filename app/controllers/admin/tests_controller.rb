@@ -44,15 +44,11 @@ class Admin::TestsController < Admin::BaseController
   private
 
   def test_params
-    params.require(:test).permit(:title, :level, :category_id, :author_id)
+    params.require(:test).permit(:title, :level, :category_id)
   end
 
   def find_test
     @test = Test.find(params[:id])
-  end
-
-  def find_user
-    @user = User.first
   end
   
   def rescue_with_test_not_found

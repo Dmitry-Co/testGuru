@@ -1,13 +1,6 @@
 en:
-  errors:
-    messages:
-      invalid_locale: "is not a valid locale"
-  activerecord:
-    attributes:
-      test:
-        title: "Title"
-        level: "Level"
-  helpers:
-    submit:
-      test: 
-        create: "Create Test"
+ hello: "Hello world!"
+
+ tests:
+    index:
+      header: "Tricky Tests"

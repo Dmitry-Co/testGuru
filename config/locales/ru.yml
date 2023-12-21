@@ -13,9 +13,21 @@ ru:
           category_id: "Категория"
           author_id: "Автор"
 
+  shared:
+    errors:
+      header:
+        few: "Обнаружено %{count} ошибки"
+        many: "Обнаружено %{count} ошибок"
+        one: "Обнаружена %{count} ошибка"
+        other: "Обнаружено %{count} ошибки"
+
   tests:
     index:
       header: "Доступные тесты"
+
+  test_passages:
+    result:
+      header: "Тест %{title} успешно завершен!"
 
   admin:
     tests:
@@ -23,3 +35,7 @@ ru:
         success: "Тест был успешно создан."
       index:
         header: "Доступные тесты"
+        
+  tests_mailer:
+    completed_test:
+      subject: "Вы успешно завершили тест на TestGuru!"

@@ -13,9 +13,19 @@ en:
           category_id: "Category"
           author_id: "Author"
 
+  shared:
+    errors:
+      header:
+        one: "%{count} error detected"
+        other: "%{count} errors detected"
+
   tests:
     index:
       header: "Tricky Tests"
+
+  test_passages:
+    result:
+      header: "Test %{title} was succesfully completed!"
       
   admin:
     tests:
@@ -23,3 +33,7 @@ en:
         success: "Test was succesfully created."
       index:
         header: "Tricky Tests"
+
+  tests_mailer:
+    completed_test:
+      subject: "You just completed the TestGuru test!"

@@ -12,6 +12,7 @@ en:
           level: "Level"
           category_id: "Category"
           author_id: "Author"
+    
 
   shared:
     errors:
@@ -22,10 +23,25 @@ en:
   tests:
     index:
       header: "Tricky Tests"
+      title: "Title"
+      level: "Level"
+      questions: "Questions quantity"
+      actions: "Actions"
+    test:
+      start: "Start"
 
   test_passages:
     result:
       header: "Test %{title} was succesfully completed!"
+      score: "Your score is"
+      succes: "The test was successfully passed!"
+      failed: "Unfortunately the test has failed 0_o"
+      back: "Back"
+    show:
+      header: " Passing test: %{title}"
+      question: "Question: %{question}"
+      question_num: "Question: %{quest} from %{all}"
+      next: "Next question"
       
   admin:
     tests:
@@ -37,3 +53,8 @@ en:
   tests_mailer:
     completed_test:
       subject: "You just completed the TestGuru test!"
+
+  devise:
+    sessions:
+      user:
+        signed_in: "You have successfully logged in!!!"

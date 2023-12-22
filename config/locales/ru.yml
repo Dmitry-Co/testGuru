@@ -23,11 +23,26 @@ ru:
 
   tests:
     index:
-      header: "Доступные тесты"
+      header: "Хитрые тесты"
+      title: "Название"
+      level: "Уровень"
+      questions: "Кол. вопросов"
+      actions: "Действия"
+    test:
+      start: 'Начать'
 
   test_passages:
     result:
       header: "Тест %{title} успешно завершен!"
+      score: "Ваш результат"
+      succes: "Вы успешно прошли тест!"
+      failed: "К сожелению тест не пройден 0_o"
+      back: "Назад"
+    show:
+      header: "Прохождение теста %{title}"
+      question: "Вопрос: %{question}"
+      question_num: "%{quest} вопрос из %{all}"
+      next: "Следующий вопрос"
 
   admin:
     tests:
@@ -39,3 +54,9 @@ ru:
   tests_mailer:
     completed_test:
       subject: "Вы успешно завершили тест на TestGuru!"
+
+
+  devise:
+    sessions:
+      user:
+        signed_in: "Вы успешно вошли в систему!!!"

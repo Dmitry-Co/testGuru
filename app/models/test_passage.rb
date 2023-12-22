@@ -25,7 +25,7 @@ class TestPassage < ApplicationRecord
   end
 
   def score
-    (correct_questions * 100)
+    (correct_questions * 100) / test.questions.count
   end
 
 private

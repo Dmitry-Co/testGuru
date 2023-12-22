@@ -1,16 +1,12 @@
 <h1><%= t('.header') %></h1>
 
-<% if @tests.present? %>
 <table>
   <tr>
-    <th>Title</th>
-    <th>Level</th>
-    <th>Questions Count</th>
-    <th>Actions</th>
+    <th><%= t('.title') %></th>
+    <th><%= t('.level') %></th>
+    <th><%= t('.questions')%> </th>
+    <th><%= t('.actions')%></th>
   </tr>
   <%= render @tests %>
 </table> 
-<% else %>
-<p>You haven't tests in progress</p>
- <% end %>
  

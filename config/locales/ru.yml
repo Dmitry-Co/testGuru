@@ -35,7 +35,7 @@ ru:
     result:
       header: "Тест %{title} успешно завершен!"
       score: "Ваш результат"
-      succes: "Вы успешно прошли тест!"
+      success: "Вы успешно прошли тест!"
       failed: "К сожелению тест не пройден 0_o"
       back: "Назад"
     show:
@@ -49,8 +49,65 @@ ru:
       create:
         success: "Тест был успешно создан."
       index:
-        header: "Доступные тесты"
-        
+        header: "Хитрые тесты"
+        title: "Название"
+        level: "Уровень"
+        questions: "Вопросы"
+        actions: "Действия"
+        new: "Создать новый тест"
+      new:
+        new_test: "Создать новый тест"
+        back: "Назад"
+      test:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+        confirmation: "Вы уверены?"
+      edit:
+        back: "Назад"
+        edit_test: "Редактировать тест"
+      show:
+        edit: "Редактировать"
+        back: "Назад"
+        title: "Название"
+        level: "Уровень"
+        questions: "Вопросы"
+        actions: "Действия"
+        new_question: "Новый вопрос"
+    questions:
+      form:
+        edit_body: "Название вопроса"
+      question:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+      edit:
+        edit_question: "Редактирование вопроса"
+        back: "Назад"
+      new:
+        back: "Назад"
+      show:
+        header: "Название"
+        answers: "Ответы"
+        body: "Вопрос"
+        new_answer: "Создать новый ответ"
+        edit: "Редактировать"
+        back: "Назад"
+    answers:
+      answer:
+        show: "Показать"
+        edit: "Редактировать"
+        delete: "Удалить"
+      form:
+        an_name: "Название вопроса"
+        back: "Назад"
+      show:
+        header: "Название"
+        body: "Вопрос"
+        answers: "Ответы"
+        correct: "Правильный"
+        back: "Назад"
+              
   tests_mailer:
     completed_test:
       subject: "Вы успешно завершили тест на TestGuru!"

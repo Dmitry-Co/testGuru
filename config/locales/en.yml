@@ -34,7 +34,7 @@ en:
     result:
       header: "Test %{title} was succesfully completed!"
       score: "Your score is"
-      succes: "The test was successfully passed!"
+      success: "The test was successfully passed!"
       failed: "Unfortunately the test has failed 0_o"
       back: "Back"
     show:
@@ -49,7 +49,64 @@ en:
         success: "Test was succesfully created."
       index:
         header: "Tricky Tests"
-
+        title: "Title"
+        level: "Level"
+        questions: "Questions"
+        actions: "Actions"
+        new: "Create new test"
+      new:
+        new_test: "Create new test"
+        back: "Back"
+      test:
+        new: "Show"
+        edit: "Edit"
+        delete: "Delete"
+        confirmation: "Are you sure?"
+      edit:
+        back: "Back"
+        edit_test: "Edit test"
+      show:
+        edit: "Edit"
+        back: "Back"
+        title: "Title"
+        level: "Level"
+        questions: "Questions"
+        actions: "Actions"
+        new_question: "New question"
+    questions:
+      form:
+        edit_body: "Question name"
+      question:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+      edit:
+        edit_question: "Edit question"
+        back: "Back"
+      new:
+        back: "Back"
+      show:
+        header: "Title"
+        answers: "Answers"
+        body: "Question"
+        new_answer: "Create a new answer"
+        edit: "Edit"
+        back: "Back"
+    answers:
+      answer:
+        show: "Show"
+        edit: "Edit"
+        delete: "Delete"
+      form:
+        an_name: "Question name"
+        back: "Back"
+      show:
+        header: "Title"
+        body: "Question"
+        answers: "Answers"
+        correct: "Correct"
+        back: "Back"
+      
   tests_mailer:
     completed_test:
       subject: "You just completed the TestGuru test!"

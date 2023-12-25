@@ -6,7 +6,7 @@
     <%= @answer.question.body %>
   </p>
   <p>
-    <%= form.label :body %>
+    <%= form.label t('.an_name') %>
     <%= form.text_area :body, id: :answer_body, rows: 7, cols: 60 %>
   </p>
 
@@ -18,4 +18,6 @@
   <p><%= form.submit %></p>
 <% end %>
 
-<%= link_to 'Back', admin_question_path(@answer.question) %>
+<%= link_to t('.back'), admin_question_path(@answer.question) %>
+
+

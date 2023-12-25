@@ -3,7 +3,7 @@
   <%= t('.score') %>
   <% if @test_passage.success? %>
     <good><%= @test_passage.score %>%</good><br>
-    <good><%= t('.succes') %></good>
+    <good><%= t('.success') %></good>
   <% else %>
     <bad><%= @test_passage.score %>%</bad><br>
     <bad><%= t('.failed') %></bad>

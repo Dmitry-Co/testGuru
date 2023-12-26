@@ -106,6 +106,10 @@ en:
         answers: "Answers"
         correct: "Correct"
         back: "Back"
+    nav:
+      panel: "TestGuru Admin Panel!"
+      welcome: "Welcom, %{first} %{last} Guru!"  
+      logout: "Logout"
       
   tests_mailer:
     completed_test:
@@ -115,3 +119,48 @@ en:
     sessions:
       user:
         signed_in: "You have successfully logged in!!!"
+    confirmations:
+      new:
+        header: "Resend confirmation instructions"
+        email: "Email"
+        confirm: "Resend confirmation instructions"
+    sessions:
+      new:
+        header: "Enter to Guru Gate"
+        email: "Email"
+        password: "password"
+        remember_me: "Remember"
+        submit: "Enter"
+    shared:
+      links:
+        log_in: "Login"
+        sign_up: "Signup"
+        forgot_your_password?: "Forgot you password?"
+        сonfirmation_instructions?: "Didn't receive confirmation instruction?"
+        unlock_instructions?: "Didn't receive unlock instruction?"
+    registrations:
+      new:
+        header: "Become Guru"
+        first_name: "First name"
+        last_name: "Last name"
+        email: "email"
+        password: "password"
+        symbols_min: "symbols minimum"
+        pass_confirmation: "Password confirmation"
+        sign_in: "Signup"
+      edit:
+        edit: "Edit"
+        email: "Email"
+        waiting_confirmation: "Currently awaiting confirmation"
+        password: "Password"
+        leave_blank: "Leave it blank if you don't want to change it"
+        symbols_min: "Minimum characters"
+        pass_confirmation: "Password confirmation"
+        current_password: "Current password"
+        pass_for_confirm_change: "We need your current password to confirm your changes"
+        update: "Update"
+        cancel_account: "Cancel my account"
+        unhappy_message: "Unhappy?"
+        confirmation_message: "Are you sure?"
+        turbo_confirmation_message: "Are you sure?"
+        back: "Back"

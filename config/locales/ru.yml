@@ -107,6 +107,10 @@ ru:
         answers: "Ответы"
         correct: "Правильный"
         back: "Назад"
+    nav:
+      panel: "Панель администратора ТестГуру!"
+      welcome: "Добро пожаловать, %{first} %{last} Гуру"  
+      logout: "Выход"
               
   tests_mailer:
     completed_test:
@@ -117,3 +121,49 @@ ru:
     sessions:
       user:
         signed_in: "Вы успешно вошли в систему!!!"
+
+    confirmations:
+      new:
+        header: "Повторно отправить инструкции по подтверждению"
+        email: "Почта"
+        confirm: "Повторно отправить инструкции по подтверждению"
+    sessions:
+      new:
+        header: "Войдите во Врата Гуру"
+        email: "Почта"
+        password: "Пароль"
+        remember_me: "Запомнить"
+        submit: "Войти"
+    shared:
+      links:
+        log_in: "Войти"
+        sign_up: "Зарегестрироваться"
+        forgot_your_password?: "Забыли свой пароль?"
+        сonfirmation_instructions?: "Не получили инструкцию подтверждения?"
+        unlock_instructions?: "Не получили инструкцию разблокировки?"
+    registrations:
+      new:
+        header: "Стань Гуру"
+        first_name: "Имя"
+        last_name: "Фамилия"
+        email: "Почта"
+        password: "Пароль"
+        symbols_min: "cимволов минимум"
+        pass_confirmation: "Подтверждение пароля"
+        sign_in: "Зарегестрироваться"
+      edit:
+        edit: "Изменить"
+        email: "Почта"
+        waiting_confirmation: "В настоящее время ожидает подтверждения"
+        password: "Пароль"
+        leave_blank: "Оставьте пустым, если не хотите его менять"
+        symbols_min: "cимволов минимум"
+        pass_confirmation: "Подтверждение пароля"
+        current_password: "Действующий пароль"
+        pass_for_confirm_change: "Нам нужен ваш текущий пароль, чтобы подтвердить ваши изменения"
+        update: "Обновить"
+        cancel_account: "Удалить мой аккаунт"
+        unhappy_message: "Несчастный?"
+        confirmation_message: "Вы уверены?"
+        turbo_confirmation_message: "Вы уверены?"
+        back: "Назад"

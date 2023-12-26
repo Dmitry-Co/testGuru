@@ -4,10 +4,10 @@
 
   <p>
     <%= form.label t('.edit_body')  %><br>
-    <%= form.text_field :body, id: :question_body%>
+    <%= form.text_area :body, id: :question_body, rows: 7, cols: 60 %>
   </p>
 
-  <p><%= form.submit %></p>
+  <p><%= form.submit t('.save_question') %></p>
 
 <% end %>
 

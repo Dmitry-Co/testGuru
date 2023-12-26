@@ -76,6 +76,7 @@ en:
     questions:
       form:
         edit_body: "Question name"
+        save_question: "Save"
       question:
         show: "Show"
         edit: "Edit"

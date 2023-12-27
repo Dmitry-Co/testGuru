@@ -48,6 +48,9 @@ gem 'webpacker', '~> 5.0'
 
 gem 'devise', '~> 4.0'
 
+# Localization
+gem 'rails-i18n', '~> 6.0.0'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

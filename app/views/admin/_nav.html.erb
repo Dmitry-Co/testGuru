@@ -1,9 +1,9 @@
-<div class="nav nav-admin">
+<div class="nav nav-admin navbar navbar-dark bg-primary rounded">
   <span class="nav-admin title"><%= t('.panel') %></span> 
 
-  <div class="nav-admin user">
- 
+  <div class="nav-admin user ml-auto">
     <%= t('.welcome', last: current_user.last_name, first: current_user.first_name) %> *
-    <%= link_to t('.logout'), destroy_user_session_path, method: :delete %>
+    <span class="nav-user-email text-muted font-italic text-success"><%= current_user.email %></span>
+    <%= link_to t('.logout'), destroy_user_session_path, method: :delete, class: 'btn btn-success btn-sm' %>
   </div>
 </div>
